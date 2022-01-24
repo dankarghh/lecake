@@ -1,0 +1,165 @@
+body {
+  font-family: "Volkhov", serif;
+  color: rgb(189, 29, 29);
+}
+.content-wrap {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+p {
+  font-size: 0.8rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgb(24, 24, 24);
+}
+.hero {
+  background-image: url(/img/le-cake-main-banner.jpg);
+  display: flex;
+  /* height: 40vh; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: rgb(189, 29, 29);
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.hero h1 {
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff; */
+}
+.btn {
+  background: rgb(163, 25, 25);
+  color: white;
+  padding: 0.7rem 2rem;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+}
+
+.hero-content {
+  margin-top: 8rem;
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(189, 29, 29);
+}
+header h1 {
+  margin-bottom: 1rem;
+}
+h1 {
+  margin-bottom: 0;
+}
+h2 {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 920px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 0.6fr 0.6fr 1.8fr;
+  }
+  .menu li {
+    border-top: none !important;
+  }
+  .menu-items {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+  }
+  .menu-heading {
+    display: none;
+  }
+  .hero-content {
+    grid-column-start: 3;
+  }
+  .menu {
+    height: inherit !important;
+  }
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  padding: 0.5rem 0.2rem;
+  margin: 0;
+  border-top: solid 0.5px rgb(206, 202, 202);
+}
+
+.menu {
+  overflow: hidden;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transition: height 0.3s ease-in;
+  height: 40vh;
+}
+.hidden {
+  height: 0;
+}
+.content-card__desserts {
+  background: url(img/le-cake-desserts-2-1.jpg);
+}
+.content-card__savouries {
+  background: url(img/le-cake-savoury-2-1.jpg);
+}
+.content-card__catalogue {
+  background: url(img/le-cake-catalogue-2-1.jpg);
+}
+
+.content-card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1rem;
+}
+.content-card-content {
+  margin: 2rem;
+  grid-column: 2;
+}
+
+@media screen and (min-width: 920px) {
+  .content-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  .content-card {
+    display: block;
+  }
+  .content-card-content {
+    text-align: right;
+  }
+  .content-card-content p {
+    margin-left: 4rem;
+    font-size: ;
+  }
+}
+.wholesale-card {
+  margin-top: 2rem;
+  text-align: center;
+}
+.wholesale-card-content {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 920px) {
+  .wholesale-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .wholesale-card-content {
+    grid-column-start: -4;
+    grid-column-end: -2;
+    margin: 2rem;
+  }
+}
